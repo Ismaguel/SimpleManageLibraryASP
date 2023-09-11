@@ -15,7 +15,6 @@ namespace Lib.Web.Data
         public DbSet<Book> Books { get; set; }
         public DbSet<Imprinter>  Imprinters { get; set; }
         public DbSet<Imprint> Imprints { get; set; }
-        public DbSet<Library> Lib { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)

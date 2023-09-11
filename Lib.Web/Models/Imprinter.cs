@@ -13,8 +13,6 @@ namespace Lib.Web.Models
 
         public int ImprintId { get; set; }
         public Imprint Imprint { get; set; }
-        public Library Library { get; set; }
-        public List<Book> ListBoookImprinter { get; set; }
         #endregion
 
         #region Properties

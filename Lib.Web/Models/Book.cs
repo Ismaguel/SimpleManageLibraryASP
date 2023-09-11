@@ -13,9 +13,6 @@ namespace Lib.Web.Models
         // Clé étrangère vers l'Imprint associée à ce Book
         public int ImprintId { get; set; }
         public Imprint Imprint { get; set; }
-        public int LibraryId { get; set; }
-        public Library Library { get; set; }
-        public Imprinter Imprinter { get; set; }
         #endregion
         #region Properties
 

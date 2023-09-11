@@ -11,7 +11,6 @@ namespace Lib.Web.Models
         private bool remisOuPas;
         private Imprinter _emprinteur = new Imprinter();
         private Book _book;
-        public Library Library { get; set; }
         #endregion
         #region Properties
 
