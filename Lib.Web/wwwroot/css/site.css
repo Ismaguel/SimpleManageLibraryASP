@@ -1,0 +1,85 @@
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.workpanel {
+    padding: 20px; /* Ajoutez un rembourrage pour centrer le contenu */
+    margin-left:-150px;
+}
+
+.mainBody {
+    margin-left: 200px;
+    margin-top:1px;
+}
+.side_bar {
+    display: block;
+    background-color:cornflowerblue;
+    width: 150px;
+    height: 530px;
+    margin-left:-10px;
+    z-index: 5;
+}
+    .side_bar span {
+        display: block;
+        margin-left: -60px;
+    }
+
+.side_bar ul {
+    list-style: none;
+    padding: 0;
+}
+.side_bar a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;  /*Utilisation de Flexbox pour aligner les éléments verticalement*/ 
+    align-items: center;  /*Centrer verticalement les éléments */
+}
+.side_bar i {
+    margin-right: 10px;
+}
+
+.side_bar li {
+    margin-bottom: -40px;
+}
+    .side_bar svg {
+        width: 60px;
+        margin-left: 20px;
+
+    }
+    .side_bar img {
+        height: 100px;
+        width: 145px;
+        margin-left:2px;
+        background-color: cornflowerblue;
+    }
+    .side_bar imgDash {
+        height: 50px;
+        width: 100px;
+        margin-left: 2px;
+        background-color: cornflowerblue;
+    }
+.menu-buttons {
+    font-family: Tahoma;
+    font-size: 30px;
+margin-block:10px,17px;
+color: #5e5d5d;
+}
