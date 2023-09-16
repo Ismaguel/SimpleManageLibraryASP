@@ -60,7 +60,7 @@ namespace Lib.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(imprinter);
+                _context.Imprinters.Add(imprinter);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }

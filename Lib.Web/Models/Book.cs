@@ -11,8 +11,8 @@ namespace Lib.Web.Models
         private string? author;
         private int exemplaire;
         // Clé étrangère vers l'Imprint associée à ce Book
-        public int ImprintId { get; set; }
-        public Imprint Imprint { get; set; }
+      //  public int ImprintId { get; set; }
+        //public Imprint Imprint { get; set; }
         #endregion
         #region Properties
 

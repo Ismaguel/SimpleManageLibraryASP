@@ -11,8 +11,8 @@ namespace Lib.Web.Models
         private DateTime datedeNaissance;
         private string profil;
 
-        public int ImprintId { get; set; }
-        public Imprint Imprint { get; set; }
+        //public int ImprintId { get; set; }
+        //public Imprint Imprint { get; set; }
         #endregion
 
         #region Properties

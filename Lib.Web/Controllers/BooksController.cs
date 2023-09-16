@@ -18,13 +18,12 @@ namespace Lib.Web.Controllers
         {
             _context = context;
         }
-
         // GET: Books
         public async Task<IActionResult> Index()
         {
-              return _context.Books != null ? 
-                          View(await _context.Books.ToListAsync()) :
-                          Problem("Entity set 'Context.Books'  is null.");
+            return _context.Books != null ?
+                        View(await _context.Books.ToListAsync()) :
+                        Problem("Entity set 'Context.Books'  is null.");
         }
 
         // GET: Books/Details/5
@@ -56,11 +55,11 @@ namespace Lib.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Title,Type,Author,Edition,Numpage,Exemplaire,DisplayName,Id,CreateAt,DeleteAt,UpdateAt")] Book book)
+        public async Task<IActionResult> Create(Book book)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(book);
+                _context.Books.Add(book);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }

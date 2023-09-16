@@ -15,7 +15,7 @@
         //[RegularExpression(@"^((\d)*(\D)(.)*)$", ErrorMessage = "invalid input format")]
         public virtual string? DisplayName { get; set; }
 
-        public  int Id { get => _id; set => _id = value; }
+        public virtual  int Id { get => _id; set => _id = value; }
         public virtual DateTime CreateAt { get => _createAt; set => _createAt = value; }
         public virtual DateTime? DeleteAt { get => _deleteAt; set => _deleteAt = value; }
         public virtual DateTime? UpdateAt { get => _updateAt; set => _updateAt = value; }

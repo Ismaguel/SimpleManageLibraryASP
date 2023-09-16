@@ -29,16 +29,16 @@ namespace Lib.Web.Data
                 .HasValue<Book>("Book")
                 .HasValue<Imprinter>("Imprinter")
                 .HasValue<Imprint>("Imprint");
-            builder.Entity<Imprint>()
-        .HasMany(imprint => imprint.Books)
-        .WithOne(book => book.Imprint)
-        .HasForeignKey(book => book.ImprintId)
-        .IsRequired(false);
-            builder.Entity<Imprint>()
-        .HasMany(imprint => imprint.Imprinters)
-        .WithOne(imprinter => imprinter.Imprint)
-        .HasForeignKey(imprinter => imprinter.ImprintId)
-        .IsRequired(false);
+            builder.Entity<Imprint>();
+            //.HasMany(imprint => imprint.Books)
+            //.WithOne(book => book.Imprint)
+            //.HasForeignKey(book => book.ImprintId)
+            //.IsRequired(false);
+            builder.Entity<Imprint>();
+        //.HasMany(imprint => imprint.Imprinters)
+        //.WithOne(imprinter => imprinter.Imprint)
+        //.HasForeignKey(imprinter => imprinter.ImprintId)
+        //.IsRequired(false);
         }
 
     }
