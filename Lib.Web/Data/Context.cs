@@ -17,6 +17,7 @@ namespace Lib.Web.Data
         public DbSet<Imprint> Imprints { get; set; }
 
 
+        /// Method for prevent data loosing created using EF Core
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
