@@ -1,9 +1,44 @@
-﻿@*@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@using Lib.Web.ViewModel
+@using Lib.Web.Models
+@model DashboardViewModel
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
-*@
+<h2>Tableau de Bord</h2>
+
+<p>Nombre total de livres : @Model.TotalBooks</p>
+<p>Nombre total d'imprimeurs: @Model.TotalImprinters</p>
+
+<canvas id="booksChart" width="300" height="100"></canvas>
+<canvas id="imprintersChart" width="400" height="200"></canvas>
+
+<canvas id="bookImprintersChart" width="300" height="100"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    var viewModel = @Html.Raw(Json.Serialize(Model.TotalBooks));
+        var viewModel1 = @Html.Raw(Json.Serialize(Model.TotalImprinters));
+
+    // Diagramme pour le nombre total de livres
+    var booksCtx = document.getElementById('booksChart').getContext('2d');
+    var booksChart = new Chart(booksCtx, {
+        type: 'bar',
+        data: {
+            labels: ['Nombre de Livres'],
+            datasets: [{
+                label: viewModel,
+                data: [viewModel, viewModel1],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+</script>

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "l5FCgfnAF1tTEFJSO0d1Naz+qXq++OJ2aHWA8p/jS7QKY15CCH34mRFqK+xDNWrgAUYJsKAYmi0rWrc7vJGcQA==",
+  "dgSpecHash": "PBBEBGfklD1Zv0W+bF+lpD0wuSEpmBsZLX0GBx2uhUT8ldJKB3VdWk1DF0shIZC7xC+isKJ7wtcWhIfjUDoD0A==",
   "success": true,
   "projectFilePath": "C:\\Users\\GABERA\\source\\repos\\SimpleManageLibraryASP\\Lib.Web\\Lib.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\GABERA\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\GABERA\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\GABERA\\.nuget\\packages\\chart.js\\3.7.1\\chart.js.3.7.1.nupkg.sha512",
     "C:\\Users\\GABERA\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\GABERA\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\GABERA\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",
