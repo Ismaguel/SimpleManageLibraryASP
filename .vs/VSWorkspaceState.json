@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Lib.Web",
+    "\\Lib.Web\\wwwroot",
+    "\\Lib.Web\\wwwroot\\css"
   ],
-  "SelectedNode": "\\Lib.Web.sln",
+  "SelectedNode": "\\Lib.Web\\wwwroot\\css\\site.css",
   "PreviewInSolutionExplorer": false
 }
